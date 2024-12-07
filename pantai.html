@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantai Bima - Tempat Wisata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: cadetblue;
+            color:#f4f4f4;
+            padding: 50px 0;
+        }
+
+        header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .beach-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .beach-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .beach-item:hover {
+            transform: scale(1.05);
+        }
+
+        .beach-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .beach-item h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #222;
+        }
+
+        .beach-item p {
+            font-size: 1rem;
+            padding: 0 20px;
+            color: #222;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Pantai Bima</h2>
+        <p>Temukan pantai-pantai eksotis di Bima yang siap memanjakan mata dan relaksasi.</p>
+    </header>
+
+    <div class="container">
+        <h3 class="section-title">Pantai-Pantai di Bima</h3>
+        <div class="beach-list">
+            <div class="beach-item">
+                <img src="images/lariti.jpg" alt="Pantai Lariti">
+                <h3>Pantai Lariti</h3>
+                <p>Pantai dengan fenomena laut terbelah yang menakjubkan.</p>
+            </div>
+            <div class="beach-item">
+                <img src="images/pink.jpg" alt="Pantai Pink">
+                <h3>Pantai Pink</h3>
+                <p>Pantai dengan pasir pinknya menawarkan pemandangan yang indah.</p>
+            </div>
+            <div class="beach-item">
+                <img src="images/wane.jpg" alt="Pantai Wane">
+                <h3>Pantai Wane</h3>
+                <p>Pantai dengan pasir putihnya yang halus dan air laut yang jernih.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explore Bima. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

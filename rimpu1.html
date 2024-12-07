@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimpu - Budaya Bima</title>
+    <style>
+        /* CSS untuk halaman Rimpu */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: maroon; /* Warna merah */
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex; /* Menggunakan Flexbox untuk menata elemen berdampingan */
+            justify-content: space-between; /* Membagi ruang secara merata antara elemen */
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .content h3 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .content > div {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Gambar Rimpu */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px; /* Mengatur tinggi agar gambar berada di tengah */
+            padding: 20px 0; /* Memberikan ruang vertikal agar gambar tidak terlalu berada di atas */
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px; /* Membatasi ukuran gambar */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Video tentang Rimpu */
+        .video-container {
+            margin-top: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Menyusun elemen secara vertikal pada layar kecil */
+                padding: 20px;
+            }
+
+            .image-container img, .video-container iframe {
+                max-width: 100%;
+            }
+
+            .video-container {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Rimpu</h1>
+        <p>Menelusuri Tradisi berbusana kaum perempuan suku Bima.</p>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Deskripsi tentang Rimpu -->
+        <div>
+            <h3>Rimpu - Festival Rimpu Mantika</h3>
+            <p>Kegiatan rimpu dilaksanakan setahun sekali, yaitu dalam Festival Rimpu Mantika.
+                Festival ini merupakan kegiatan yang mengangkat rimpu, pakaian tradisional khas Suku Mbojo, sebagai ciri khas budaya Bima. </p>
+            <p>Festival Rimpu Mantika diikuti oleh seluruh masyarakat Kota Bima, serta beberapa tamu dari luar.
+                Kegiatan ini merupakan salah satu momen sejarah Mbojo yang identik dengan Sarung Ngoli Rimpu Mantika.</p>
+        </div>
+
+        <!-- Gambar Rimpu -->
+        <div class="image-container">
+            <img src="images/rimpu.jpg" alt="Festival Rimpu">
+        </div>
+
+        <!-- Video tentang Rimpu -->
+        <div class="video-container">
+            <h4>Menonton Festival Rimpu secara langsung</h4>
+            <iframe src="https://www.youtube.com/embed/3XD9PSPZPzM" title="Rimpu" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Explore Bima. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

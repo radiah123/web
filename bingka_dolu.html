@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingka Dolu - Makanan Khas Bima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: brown;
+            color: white;
+            padding: 50px 0;
+        }
+
+        header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 30px;
+            display: flex; /* Menggunakan Flexbox untuk menampilkan deskripsi dan video berdampingan */
+            gap: 30px; /* Memberikan jarak antara elemen */
+        }
+
+        .food-description {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            flex: 1; /* Memberikan ruang fleksibel pada deskripsi */
+        }
+
+        .food-video {
+            flex: 1; /* Memberikan ruang fleksibel pada video */
+            text-align: center;
+        }
+
+        .food-video iframe {
+            width: 100%;
+            max-width: 500px; /* Membatasi lebar video */
+            height: 300px; /* Menyesuaikan tinggi video */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Menyusun deskripsi dan video secara vertikal pada layar kecil */
+                align-items: center;
+            }
+
+            .food-description, .food-video {
+                flex: unset; /* Membatalkan fleksibilitas untuk tampilan responsif */
+                margin-bottom: 20px;
+            }
+
+            .food-video iframe {
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Bingka Dolu</h2>
+    </header>
+
+    <div class="content">
+        <div class="food-description">
+            <h3>Deskripsi</h3>
+            <p>Bingka Dolu merupakan kue basah berbahan dasar tepung, gula merah, dan santan. Kue satu ini memiliki tekstur lembut yang akan terasa sejak gigitan pertama. Rasa manis dari santan kelapa dan gula merahnya akan menciptakan rasa manis yang legit.</p>
+            <p>Dahulu, kue ini menjadi hidangan favorit para Sultan Bima. Bingka Dolu kerap disuguhkan pada saat menyambut tamu-tamu kesultanan. Saat ini, kue basah ini kerap dijumpai di beberapa perhelatan budaya seperti penobatan Sultan, penobatan Jena Teke dan bahkan Festival Keraton Nusantara.</p>
+        </div>
+
+        <div class="food-video">
+            <h3>Video Resep</h3>
+            <iframe src="https://www.youtube.com/embed/0Hko7F2VzPE" title="Bingka Dolu" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explore Bima. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

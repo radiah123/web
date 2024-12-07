@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Explore Bima</title>
+    <style>
+      /* Gaya Global */
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Arial', sans-serif;
+          line-height: 1.6;
+          text-align: justify;
+      }
+
+      /* Header dengan Gambar Latar */
+      .header-bg {
+          background-image: url('images/wali.jpg'); /* Gambar latar belakang */
+          background-size: cover;
+          background-position: center;
+          height: 20vh; /* Atur tinggi header */
+          position: relative;
+          color: rgb(255, 255, 255);
+          text-align: center;
+      }
+
+      .header-bg .overlay {
+          background-color: rgba(119, 126, 121, 0.742);
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+
+      .home-title {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 2rem;
+          font-weight: bold;
+      }
+
+      /* Judul Bagian */
+      h1, h2 {
+          color: black;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      /* Tata Letak Gambar dan Paragraf */
+      .home-image-info {
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          margin: 20px;
+          justify-content: center; /* Menyelaraskan gambar dan teks */
+      }
+
+      .image-container img {
+          max-width: 300px;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+
+      /* Menambahkan jarak pada paragraf di dalam kontainer teks */
+      .text-container p {
+          margin-left: 30px;  /* Jarak kiri */
+          margin-right: 30px; /* Jarak kanan */
+          line-height: 1.6;
+      }
+
+      /* Seksi Sejarah dan Kebudayaan */
+      .home-culture {
+          background-color: #ffffff;
+          padding: 30px 20px;
+      }
+
+      .home-culture h2 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+      }
+
+      /* Paragraf tambahan */
+      .additional-paragraphs p {
+          margin-left: 30px;  /* Jarak kiri */
+          margin-right: 30px; /* Jarak kanan */
+          line-height: 1.6;    /* Spasi antar-baris */
+          text-align: justify; /* Meratakan teks ke kiri dan kanan */
+      }
+
+      /* Tombol Kembali ke Menu Utama */
+      .back-button-container {
+          text-align: center;
+          margin-top: 20px;
+      }
+
+      .back-button {
+          padding: 10px 20px;
+          background-color: gray;
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+
+      .back-button:hover {
+          background-color: grey;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header-bg">
+        <div class="overlay"></div>
+        <h1 class="home-title">Selamat Datang di Bima</h1>
+    </div>
+
+     <!-- Informasi Umum -->
+  <section>
+    <h1>Informasi Umum</h1>
+    <div class="home-image-info">
+        <div class="image-container">
+            <img src="images/suku.jpg" alt="Gambar Bima">
+        </div>
+        <div class="text-container">
+            <p>
+                Suku Bima berasal dari Kabupaten Bima yang terletak di bagian timur Pulau Sumbawa. 
+                Selain di Kabupaten Bima, sebagian orang Bima juga tinggal di wilayah Kabupaten Dompu (yang berbatasan dengan Kabupaten Bima) dan beberapa daerah lainnya di NTB. 
+                Beberapa orang Bima juga merantau dan tinggal di luar NTB, terutama di Bali, Jakarta, dan luar negeri.
+            <p>
+            </div>
+        </section>
+            <p>
+                Bahasa yang digunakan oleh suku Bima adalah Bahasa Bima, yang merupakan salah satu bahasa daerah di Indonesia.
+                Bahasa Bima termasuk dalam kelompok bahasa Austronesia dan memiliki beberapa dialek yang berbeda tergantung pada wilayahnya. Meskipun demikian, 
+                bahasa Indonesia digunakan secara luas oleh masyarakat Bima, terutama dalam komunikasi sehari-hari dan pendidikan.
+        <p>
+            Suku Bima merupakan kelompok etnis yang kaya akan tradisi, seni, dan budaya. 
+            Mereka telah lama dikenal sebagai masyarakat yang kuat dan memiliki identitas yang jelas melalui bahasa, adat, dan seni. Meskipun mayoritas beragama Islam, mereka tetap mempertahankan kebudayaan lokal yang sangat berharga. 
+            Keanekaragaman budaya dan tradisi ini menjadikan Suku Bima sebagai salah satu suku yang unik dan penting di Indonesia.
+        </p>
+    </section>
+
+<!-- Sejarah dan Kebudayaan -->
+<section class="home-culture">
+    <h2>Sejarah dan Kebudayaan</h2>
+    <div class="home-image-info">
+        <div class="image-container">
+            <img src="images/asi.jpg" alt="Gambar Sejarah dan Budaya Bima">
+        </div>
+        <div class="text-container">
+            <p> Bima atau yang disebut juga dengan Dana Mbojo telah mengalami perjalanan panjang dan jauh mengakar ke dalam Sejarah.
+                Menurut Legenda sebagaimana termaktub dalam Kitab BO (Naskah Kuno Kerajaan dan Kesultanan Bima), kedatangan salah seorang musafir dan bangsawan Jawa bergelar Sang Bima di Pulau Satonda merupakan cikal bakal keturunan Raja-Raja Bima dan menjadi permulaan masa pembabakan Zaman pra sejarah di tanah ini.
+                Pada masa itu, wilayah Bima terbagi dalam kekuasaan pimpinan wilayah yang disebut Ncuhi. Nama para Ncuhi terilhami dari nama wilayah atau gugusan pegunungan yang dikuasainya.
+             
+            </p>
+            </div>
+            </section>
+            <p>
+                Ada lima orang ncuhi yang tergabung dalam sebuah Federasi Ncuhi yaitu, Ncuhi Dara yang menguasai wilayah Bima bagian tengah atau di pusat Pemerintah.
+                Ncuhi  Parewa menguasai wilayah Bima bagian selatan, Ncuhi Padolo menguasai wilayah Bima bagian Barat, Ncuhi Banggapupa menguasai wilayah Bima bagian Timur, dan Ncuhi Dorowuni menguasai wilayah Utara.
+                Federasi tersebut sepakat mengangkat Sang Bima sebagai pemimpin. Secara De Jure, Sang Bima menerima pengangkatan tersebut, tetapi secara de Facto ia menyerahkan kembali kekuasaannya kepada Ncuhi Dara untuk memerintah atas namanya.
+            <p>
+                Di Nusa Tenggara Barat tepatnya di kota bima banyak beragam norma-norma, prinsip, upacara adat,ritual, pakaian adat dan berbagai macam makanan yang merupakan ciri khas Kota Bima.
+                Suku bima masih kental akan budaya tradisional, rumah-rumahnyapun masih menggunakan rumahpanggung. wanita-wanita dan laki - laki lanjut usia biasanya mereka suka memakan sirih, selain menyehatkan
+                dan membuat pencegahan gigi berlubang memakan sirih juga merupakan kebiasaan wanita-wanita dan laki-laki lanjut usia.
+            </p>
+        </section>
+        
+
+    <!-- Tombol Kembali ke Menu Utama -->
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">Kembali ke Menu Utama</a>
+    </div>
+</body>
+</html>

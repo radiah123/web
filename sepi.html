@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uta Sepi Tumis - Makanan Khas Bima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: rosybrown;
+            color: black;
+            padding: 50px 0;
+        }
+
+        header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex; /* Menggunakan Flexbox untuk menampilkan deskripsi dan video berdampingan */
+            gap: 30px; /* Memberikan jarak antara deskripsi dan video */
+            padding: 30px;
+        }
+
+        .food-description {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            flex: 1; /* Menyediakan ruang fleksibel untuk deskripsi */
+        }
+
+        .food-video {
+            flex: 1; /* Menyediakan ruang fleksibel untuk video */
+            text-align: center;
+        }
+
+        .food-video iframe {
+            width: 100%;
+            max-width: 500px; /* Membatasi lebar video */
+            height: 300px; /* Menyesuaikan tinggi video */
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Menyusun deskripsi dan video secara vertikal pada layar kecil */
+                align-items: center;
+            }
+
+            .food-description, .food-video {
+                flex: unset; /* Membatalkan fleksibilitas untuk tampilan responsif */
+                margin-bottom: 20px;
+            }
+
+            .food-video iframe {
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Uta Sepi Tumis</h2>
+    </header>
+
+    <div class="content">
+        <div class="food-description">
+            <h3>Deskripsi</h3>
+            <p>Uta sepi tumis adalah makanan khas Bima yang terbuat dari udang rebon yang ditumis dengan berbagai bumbu rempah. Hidangan ini memiliki rasa pedas, gurih, dan wangi, serta cocok disantap dengan nasi putih hangat atau sayur.</p>
+        </div>
+
+        <div class="food-video">
+            <h3>Video Resep</h3>
+            <iframe src="https://www.youtube.com/embed/z3HEZYDodRE" title="Uta Sepi Tumis" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Explore Bima. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
